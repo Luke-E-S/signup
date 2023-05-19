@@ -1,1 +1,7 @@
-
+:root {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
