@@ -5,3 +5,31 @@
 *, *::after, *::before {
     box-sizing: inherit;
 }
+.main-container {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    border: 5px solid red;
+}
+.main-container .reference {
+    position: absolute;
+    bottom: 30px;
+}
+.main-container .image {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width: 35%;
+    border: 5px solid black;
+    bottom: 0;
+    top: 0;
+}
+
+.main-container .image img {
+    object-fit:cover;
+    width: 100%;
+    bottom: 0;
+}
+
