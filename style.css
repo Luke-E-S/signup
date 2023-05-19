@@ -11,18 +11,21 @@
     bottom: 0;
     right: 10%;
     left: 10%;
-    border: 5px solid red;
 }
 .main-container .reference {
     position: absolute;
-    bottom: 30px;
+    color:white;
+    bottom: 30px;    
+    opacity:50%;
+    font-size: 24px;
+    text-shadow: 2px 2px black;
 }
 .main-container .image {
     display: flex;
     justify-content: center;
     position:absolute;
     width: 35%;
-    border: 5px solid black;
+    box-shadow: 0 0 6px 8px black;
     bottom: 0;
     top: 0;
 }
@@ -31,5 +34,9 @@
     object-fit:cover;
     width: 100%;
     bottom: 0;
+}
+.reference a {
+    color: lime;
+    font-weight:bolder;
 }
 
