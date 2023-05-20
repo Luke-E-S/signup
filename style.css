@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
 :root {
     box-sizing: border-box;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -12,15 +14,7 @@
     right: 10%;
     left: 10%;
 }
-.main-container .reference {
-    position: absolute;
-    color:white;
-    bottom: 30px;    
-    opacity:50%;
-    font-size: 16px;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px black;
-}
+
 .main-container .image {
     display: flex;
     justify-content: center;
@@ -34,6 +28,37 @@
     object-fit:cover;
     width: 100%;
     bottom: 0;
+}
+
+.main-container .header {
+    display:flex;
+    position:absolute;
+    align-items: center;
+    justify-content: center;
+    height:15%;
+    top: 30%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+}
+.main-container .header img {
+    height: 100%;
+    width: 30%;
+    object-fit: contain;
+    filter: invert(100%);
+}
+.main-container .header h1 {
+    color: white;
+    font-family: "Cinzel Decorative", Helvetica, sans-serif;
+}
+.main-container .reference {
+    position: absolute;
+    color:white;
+    bottom: 30px;    
+    opacity:50%;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px black;
 }
 .reference a {
     font-weight:bolder;
