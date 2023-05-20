@@ -17,7 +17,8 @@
     color:white;
     bottom: 30px;    
     opacity:50%;
-    font-size: 24px;
+    font-size: 16px;
+    letter-spacing: 3px;
     text-shadow: 2px 2px black;
 }
 .main-container .image {
@@ -25,7 +26,6 @@
     justify-content: center;
     position:absolute;
     width: 35%;
-    box-shadow: 0 0 6px 8px black;
     bottom: 0;
     top: 0;
 }
@@ -36,7 +36,7 @@
     bottom: 0;
 }
 .reference a {
-    color: lime;
     font-weight:bolder;
+    color: white;
 }
 
