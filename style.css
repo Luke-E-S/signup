@@ -43,7 +43,7 @@
 }
 .main-container .header img {
     height: 100%;
-    width: 30%;
+    width: 25%;
     object-fit: contain;
     filter: invert(100%);
 }
@@ -52,11 +52,11 @@
     font-family: "Cinzel Decorative", Helvetica, sans-serif;
 }
 .main-container .reference {
+    font-family: monospace;
     position: absolute;
     color:white;
-    bottom: 30px;    
-    opacity:50%;
-    font-size: 16px;
+    bottom: 10px;    
+    font-size: 12px;
     letter-spacing: 3px;
     text-shadow: 2px 2px black;
 }
