@@ -66,3 +66,12 @@
     color: white;
 }
 
+.main-body {
+    position:absolute;
+    top: 0;
+    left:35%;
+    right: 0;
+    bottom: 0;
+    background-color: aliceblue;
+}
+
