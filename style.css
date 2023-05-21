@@ -72,7 +72,7 @@
     left:35%;
     right: 0;
     bottom: 0;
-    background-color: #fdd9be;
+    background-color: antiquewhite;
 }
 .main-body .pull-text {
     position: absolute;
@@ -80,7 +80,7 @@
     left: 5%;
     right: 20%;
     font-size: 24px;
-    color:#313631
+    color:#313631;    
 }
 .main-body .pull-text a {
     color:black;
@@ -94,7 +94,8 @@
     bottom: 0;
     font-size: 24px;
     color:#313631;
-    background-color: antiquewhite;
+    background-color: #faebd7;
+    box-shadow: 0px -1px 3px 0 hsl(34, 20%, 50%);
 }
 .main-body .main-form {
     position: absolute;
@@ -114,7 +115,8 @@
     bottom: 0;
     font-size: 24px;
     color:#313631;
-    background-color: #fdd9be;
+    background-color: antiquewhite;
+    box-shadow: inset 0px 10px 10px -4px hsl(34, 20%, 50%);;
 }
 
 
