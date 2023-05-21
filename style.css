@@ -83,8 +83,9 @@
     color:#313631;    
 }
 .main-body .pull-text a {
-    color:black;
+    color:hsl(34, 20%, 50%);
     font-weight: bold;
+    text-decoration: none;
 }
 .main-body .form {
     position: absolute;
@@ -111,7 +112,7 @@
 }
 .main-body .submit-form {
     position: absolute;
-    top: 50%;
+    top: 52%;
     right: 0;
     left: 0;
     bottom: 0;
@@ -151,6 +152,17 @@ button {
     color: hsl(34, 20%, 50%);
     font-weight: bold;
 
+}
+.submit-form p {
+    position:absolute;
+    left: 6%;
+    top: 30%;
+    font-size: 18px;
+}
+.submit-form a {
+    font-weight: bold;
+    color:hsl(34, 20%, 50%);
+    text-decoration: none;
 }
 
 
