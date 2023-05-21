@@ -2,7 +2,7 @@
 
 :root {
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     background-color: #313631;
 }
 *, *::after, *::before {
@@ -72,6 +72,18 @@
     left:35%;
     right: 0;
     bottom: 0;
-    background-color: aliceblue;
+    background-color: #fdd9be;
+}
+.main-body .pull-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    font-size: 24px;
+    color:#313631
+}
+.main-body .pull-text a {
+    color:black;
+    font-weight: bold;
 }
 
