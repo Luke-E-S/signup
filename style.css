@@ -103,13 +103,15 @@
     right: 0;
     left: 0;
     bottom: 25%;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: bold;
     color:#313631;
-    background-color: antiquewhite;
+    background-color: antiquewhite;    
+    color: hsl(34, 20%, 50%);
 }
 .main-body .submit-form {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 0;
     left: 0;
     bottom: 0;
@@ -117,6 +119,38 @@
     color:#313631;
     background-color: antiquewhite;
     box-shadow: inset 0px 10px 10px -4px hsl(34, 20%, 50%);;
+}
+.names, .contacts, .passwords{
+    display:flex;
+}
+.first-name, .last-name, .email, .phone, .password, .confirm{
+    display:flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+label {
+    font-size: 18px;
+    font-weight: 300;
+}
+input {
+    height: 30px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid hsl(34, 20%, 50%);
+}
+button {
+    position:absolute;
+    left: 5%;
+    top: 10%;
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    background-color:antiquewhite;
+    border: 2px solid hsl(34, 20%, 50%);
+    border-radius: 5px;
+    color: hsl(34, 20%, 50%);
+    font-weight: bold;
+
 }
 
 
