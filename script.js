@@ -1,9 +1,9 @@
 const fname = document.querySelector("#first-name");
 
-fname.addEventListener("focusout",  () => validate());
+fname.addEventListener("focusout",  () =>  {validateText(fname)});
 
-function validate() {
-    if(fname.value.length < 2) {
-        fname.className = "invalid";
-    } else {fname.className = "valid"};
+function validateText(input) {
+    if(input.value.length < 2) {
+        input.className = "invalid";
+    } else {input.className = "valid"};
 }
