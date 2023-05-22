@@ -97,6 +97,13 @@
     color:#313631;
     background-color: antiquewhite;    
     color: hsl(34, 20%, 50%);
+    padding-top: 5%;
+}
+.main-body .main-form p {
+    margin-left: 5%;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 .main-body .submit-form {
     position:absolute;
@@ -118,6 +125,7 @@
 label {
     font-size: 18px;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 input {
     height: 30px;
@@ -153,7 +161,7 @@ button {
     border: 1px solid red;
 }
 .valid {
-    border: 1px solid hsl(34, 20%, 50%);
+    border: 1px solid lime;
 }
 
 
