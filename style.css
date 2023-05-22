@@ -139,6 +139,9 @@ input {
     border-radius: 6px;
     border: 1px solid hsl(34, 20%, 50%);
 }
+input:focus {
+    outline: hsl(34, 20%, 50%) solid 2px;
+}
 button {
     position:absolute;
     left: 5%;
@@ -163,6 +166,12 @@ button {
     font-weight: bold;
     color:hsl(34, 20%, 50%);
     text-decoration: none;
+}
+.invalid {
+    border: 1px solid red;
+}
+.valid {
+    border: 1px solid hsl(34, 20%, 50%);
 }
 
 
