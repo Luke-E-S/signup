@@ -72,7 +72,7 @@
     flex-direction: column;
     height:100%;
     margin-left:35%;
-    background-color: antiquewhite;
+    background-color: hsl(72, 22%, 91%);
 }
 .main-body .pull-text {
     margin: 5% 0 5% 5%;
@@ -80,23 +80,23 @@
     color:#313631;    
 }
 .main-body .pull-text a {
-    color:hsl(34, 20%, 50%);
+    color:hsl(72, 20%, 50%);
     font-weight: bold;
     text-decoration: none;
 }
 .main-body .form {
     font-size: 24px;
     color:#313631;
-    background-color: #faebd7;
-    box-shadow: 0px -1px 3px 0 hsl(34, 20%, 50%);
+    background-color: hsl(72, 22%, 91%);
+    box-shadow: 0px -1px 3px 0 hsl(72, 20%, 50%);
 }
 .main-body .main-form {
     margin-bottom: 5%;
     font-size: 22px;
     font-weight: bold;
     color:#313631;
-    background-color: antiquewhite;    
-    color: hsl(34, 20%, 50%);
+    background-color: hsl(72, 22%, 91%);    
+    color: hsl(72, 20%, 50%);
     padding-top: 5%;
 }
 .main-body .main-form p {
@@ -111,8 +111,8 @@
     left: 0;
     font-size: 24px;
     color:#313631;
-    background-color: antiquewhite;
-    box-shadow: inset 0px 10px 10px -4px hsl(34, 20%, 50%);;
+    background-color: hsl(72, 22%, 91%);
+    box-shadow: inset 0px 10px 10px -4px hsl(72, 20%, 50%);;
 }
 .names, .contacts, .passwords{
     display:flex;
@@ -131,30 +131,33 @@ input {
     height: 30px;
     width: 300px;
     border-radius: 6px;
-    border: 1px solid hsl(34, 20%, 50%);
+    border: 1px solid hsl(72, 20%, 50%);
 }
 input:focus {
-    outline: hsl(34, 20%, 50%) solid 2px;
+    outline: hsl(72, 20%, 50%) solid 2px;
 }
 button {
     margin: 2% 0 0 5%;
     width: 300px;
     height: 60px;
     font-size: 28px;
-    background-color:antiquewhite;
-    border: 2px solid hsl(34, 20%, 50%);
+    background-color:hsl(72, 22%, 91%);
+    border: 2px solid hsl(72, 20%, 50%);
     border-radius: 5px;
-    color: hsl(34, 20%, 50%);
+    color: hsl(72, 20%, 50%);
     font-weight: bold;
 
 }
+.submit-form {
+    padding-top: 2%;
+}
 .submit-form p {
-    margin: 0 0 0 6.5%;
+    margin: 0 0 0 6%;
     font-size: 18px;
 }
 .submit-form a {
     font-weight: bold;
-    color:hsl(34, 20%, 50%);
+    color:hsl(72, 20%, 50%);
     text-decoration: none;
 }
 .invalid {
