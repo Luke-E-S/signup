@@ -5,6 +5,8 @@ const phone = document.querySelector("#phone");
 const password = document.querySelector("#password");
 const confirmPass = document.querySelector("#confirm");
 
+const regex = new RegExp("([@\.])", "g")
+
 fname.addEventListener("focusout",  () =>  {validateText(fname)});
 lname.addEventListener("focusout",  () =>  {validateText(lname)});
 email.addEventListener("focusout",  () =>  {validateEmail(email)});
@@ -22,7 +24,9 @@ function validateText(input) {
 }
 
 function validateEmail(input) {
-
+    if(!regex.test(input.value)) {
+        input.className = "invalid";
+    } else {input.className = "valid"};
 }
 
 function validatePhone(input) {
@@ -34,5 +38,5 @@ function validatePassword(input) {
 }
 
 function validateConfirm(input) {
-    
+
 }
