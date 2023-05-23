@@ -1,2 +1,4 @@
 # signup
-project for top
+project for the odin project.
+
+testing forms with simple validation
