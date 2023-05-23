@@ -166,5 +166,12 @@ button {
 .valid {
     border: 1px solid lime;
 }
+.main-body .main-form .confirm .warning {
+    color:red;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
 

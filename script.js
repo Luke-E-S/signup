@@ -4,6 +4,7 @@ const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const password = document.querySelector("#password");
 const confirmPass = document.querySelector("#confirm");
+const confirmWarning = document.createElement("p");
 
 const regex = new RegExp("([@\.])", "g")
 
@@ -44,6 +45,13 @@ function validatePassword(input) {
 function validateConfirm(input) {
     if(!(input.value === password.value)) {
         input.className = "invalid";
-    } else {input.className = "valid"};
-
+        confirmWarning.textContent = "THE PASSWORDS DO NOT MATCH";
+        confirmWarning.className = "warning";
+        document.querySelector(".confirm").appendChild(confirmWarning);
+    } else {
+        input.className = "valid";
+        if(document.querySelector(".confirm").lastChild === confirmWarning) {
+            document.querySelector(".confirm").removeChild(confirmWarning);
+        }
+    }
 }
