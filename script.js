@@ -30,7 +30,9 @@ function validateEmail(input) {
 }
 
 function validatePhone(input) {
-
+    if(input.value.length < 10) {
+        input.className = "invalid";
+    } else {input.className = "valid"};
 }
 
 function validatePassword(input) {
