@@ -36,9 +36,14 @@ function validatePhone(input) {
 }
 
 function validatePassword(input) {
-
+    if(input.value.length < 10) {
+        input.className = "invalid";
+    } else {input.className = "valid"};
 }
 
 function validateConfirm(input) {
+    if(!(input.value === password.value)) {
+        input.className = "invalid";
+    } else {input.className = "valid"};
 
 }
