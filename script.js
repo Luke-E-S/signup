@@ -6,6 +6,7 @@ const password = document.querySelector("#password");
 const confirmPass = document.querySelector("#confirm");
 const confirmWarning = document.createElement("p");
 const phoneWarning = document.createElement("p");
+const passWarning = document.createElement("p");
 
 const regex = new RegExp("([@\.])", "g")
 
@@ -48,7 +49,15 @@ function validatePhone(input) {
 function validatePassword(input) {
     if(input.value.length < 10) {
         input.className = "invalid";
-    } else {input.className = "valid"};
+        passWarning.textContent = "MUST BE AT LEAST 10 CHARACTERS"
+        passWarning.className = "warning";
+        document.querySelector(".password").appendChild(passWarning)
+    } else {
+        input.className = "valid";
+        if(document.querySelector(".password").lastChild === passWarning) {
+            document.querySelector(".password").removeChild(passWarning);
+        }
+    }
     validateConfirm(confirmPass);
 }
 
