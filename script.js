@@ -5,6 +5,7 @@ const phone = document.querySelector("#phone");
 const password = document.querySelector("#password");
 const confirmPass = document.querySelector("#confirm");
 const confirmWarning = document.createElement("p");
+const phoneWarning = document.createElement("p");
 
 const regex = new RegExp("([@\.])", "g")
 
@@ -31,15 +32,24 @@ function validateEmail(input) {
 }
 
 function validatePhone(input) {
-    if(input.value.length < 10) {
+    if(input.value.length < 10 || /([A-Z, a-z])/g.test(input.value)) {
         input.className = "invalid";
-    } else {input.className = "valid"};
+        phoneWarning.textContent = "INVALID PHONE NUMBER";
+        phoneWarning.className = "warning";
+        document.querySelector(".phone").appendChild(phoneWarning);
+    } else {
+        input.className = "valid";
+        if(document.querySelector(".phone").lastChild === phoneWarning) {
+            document.querySelector(".phone").removeChild(phoneWarning);
+        }
+    }
 }
 
 function validatePassword(input) {
     if(input.value.length < 10) {
         input.className = "invalid";
     } else {input.className = "valid"};
+    validateConfirm(confirmPass);
 }
 
 function validateConfirm(input) {
