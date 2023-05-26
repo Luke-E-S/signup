@@ -8,7 +8,7 @@ const confirmWarning = document.createElement("p");
 const phoneWarning = document.createElement("p");
 const passWarning = document.createElement("p");
 
-const regex = new RegExp("([@\.])", "g")
+const regex = new RegExp("([@ , \.])", "g")
 
 fname.addEventListener("focusout",  () =>  {validateText(fname)});
 lname.addEventListener("focusout",  () =>  {validateText(lname)});
